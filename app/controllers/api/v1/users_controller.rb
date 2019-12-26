@@ -30,7 +30,7 @@ class Api::V1::UsersController < ApplicationController
       @user.destroy
       render json: { message: 'User successfully deleted'}, status: 200
     else
-      @render json: { error: 'Unable to delete User'}, status: 400
+      render json: { error: 'Unable to delete User.' }, status: 400
     end
   end
 

@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+to add data
+http://localhost:3000/api/v1/users/
 
-Things you may want to cover:
 
-* Ruby version
+manux = User.create( username: 'Manux', password: 'password' )
 
-* System dependencies
+http://localhost:3000/api/v1/users/1/facts
 
-* Configuration
+fact_one = Fact.create( fact: 'Wiley Hardeman Post was the first pilot to fly solo around the world.', likes: 12, user_id: 1 )
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+fact_two = Fact.create( fact: 'The Symphony No1 in E flat major, K.16, was written by Wolfgang Amadeus Mozart at the age of 8.', likes: 2, user_id: 1 )
